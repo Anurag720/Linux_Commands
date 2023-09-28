@@ -1,0 +1,92 @@
+﻿/ Linux Commands ( Basic)/
+
+ls      -> list directory , it is use to show all folder or directories present in file 
+cd    -> change directory , this command Is used to change directory , syntax -> cd directoryname
+~     -> this symbol mainly represents the home directory 
+mkdir -> this command is used to make directory or folder 
+
+/ to get inside a directory or folder and other operations /
+cd  foldername à to get inside a folder we can run ls command to know about file present in that folder
+pwd  -> print working directory , this command is used to get the whole path of a particular file or directory
+touch  -> this is used to create a empty file , and its syntax is like , touch filename.extension , touch num.txt
+nano  -> this command is used to edit the created file or existing files , and its syntax is like , nano filename.extension
+cat -> this command is used to display the content of the file, and its syntax is as , cat filename.extension
+
+/ Creating a directory , inside that making  a python file , inside python file we write a code , and then execute it /
+
+mkdir project 
+touch new_python.py
+nano new_python.py
+/ inside we write code (print(“hello world”)/
+For save press- ctrl+o -> then enter -> ctrl+x for exit
+/ to runt that file/
+python new_python.py   à for every type of file there is keyword to execute it there is a list for that 
+
+/ list of execution for different file /
+Python = python
+C++ = g++ / to complie / ./  for run
+Java = javac / to complie/ and java / to run/
+Ruby = ruby
+C# = mcs / to complie / and mono / to un/
+Rust = rustc / to complie / and ./  for run
+
+/ remove, copy and move command /
+cp  = this command is used to copy file , fom one directory to another, syntax is like  cp filename.entension ~/directory name    / this segment represent to copy one file to another directory 
+mv = this command is used to move filr , from one directory to another , syntax is like mv filename.extension~/directory name /
+this segment represent to move one filr to another directory
+rm = this command is used to remove file , syntax is / rm Anurag.txt
+rm * = this is used to remove all the files present inside a directory 
+rm -r = this command is mainly used to delete the directory / syntax is like / rm -r d2
+
+/ suppose a cenario their is a  directory and you make directory inside directory so you can copy or move file like /
+cp file.txt directory_name/    (inside the directory and there is one more directory and we wanted to copy one file to that same for move also)
+
+echo = this command is use to display ant text , variable or msg we wanted to display , syntax is like echo “my name I s”
+less = this command is mainly use to make navigation In big files much easier , less open file to read and use arrow up, down other so that we can easily navigate our file , we can also get number or pages or line with it , lets see its syntax ( less filename.txt ) to exit the file press Q
+uname = this command is used to help us know which os, machine we are using 
+whoami = it helps to know the user name 
+grep = this command is mainly use to find the particular pattern in a file , like syntax  ( grep ‘error’ one.txt) so in this it would find the error in ine.txt file
+head = this command gave us starting first 10 lines of a file without oping complete long file / head one.txt /
+tail = this command gave use ending 10 lines of a file without opening complete / tail one.txt/
+diff = this command is used to find the diff b/w two file , syntax is  (  diff one.txt second.txt)
+cmp = this command is used to check files are identical or not , if they are different , cmp will tell where the first difference occure , syntax , ( cmp one.txt sec.txt)
+comm= The comm command is used to compare two sorted files line by line and display the lines that are unique to each file and the lines that are common to both. 
+sort = this command is used for sorting line in alphabetical order , syntax is like ( sort one.txt)
+export = this command is mainly use to setup environment variables 
+zip = this command is used to compress a large file into single file , syntax ( zip comprsee_name file_name ) like ( zip new one.txt) here we compresee one .txt with file name new )
+unzip = opposite of this command 
+ssh = it is use to establish secure connection to remote or server over a network ( ssh myuser@ip)
+ps = this command is used to list of currently running processes on linux system 
+kill = this command is use to stop a running program ( kill pidnumber) we get pidn. By ps
+killall =  It's useful when you have multiple instances of a program running and want to stop all of them at once.
+mount = this command is use to connect to filesystem The mount command is used to make files and directories from a storage device or network location accessible and usable by the Linux operating system. When you plug in a USB drive or add a new hard drive to your computer, Linux doesn't automatically make the files on that drive available. You need to use the mount command to tell Linux where to access those files. 
+chmod=  this command is use to change the permissions of files and directories, allow us to control who can read , write , or execute a file or directory.lets suppose I created one.txt file and wanted only owner can read this not anyone else for that you can do ( chmod 600 one.txt) here we assign 600 permisiion ( 6 for read write , 0 for deney others)
+ifconfig = helps to see details about computers network interface like ethernet , this command display list of network interfaces on computer , along with their ip address, mac address and more
+traceroute = tells all the network hobs to reach the destination
+weget = this command is used to directly download anything from internet ( weget https://example.com/path/to/) like that we can directly use address to download
+ufw = this command helps use to use firewall on linux , Suppose you want to use UFW to allow incoming web traffic (HTTP) while blocking all other incoming connections on your Linux computer:
+sudo ufw allow 80/tcp
+sudo ufw default deny incoming
+sudo ufw enable
+· The first command (sudo ufw allow 80/tcp) opens port 80 (HTTP) for incoming connections.
+· The second command (sudo ufw default deny incoming) sets the default rule to deny all incoming connections.
+· The third command (sudo ufw enable) activates the firewall with the defined rules.
+
+sudo = superuser do , this command is use to enhance security regular user to perform administrative task temporily, means we need root user login to perform administrative task but by writing sudo in starting we can use administrative command
+alias = this command is used to create shortcut 
+useradd = to create new user 
+sudo useradd newuser
+passwd = to set password to new user
+sudo passwd newuser
+ls -1 = this command count of files present into directory
+ls -a = show hidden files in directory 
+ls -l = show permission of all files 
+
+
+
+
+
+
+
+
+
